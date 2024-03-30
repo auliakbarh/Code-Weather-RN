@@ -8,7 +8,8 @@ Weather forecasts, nowcasts and history in a fast and elegant way using [OpenWea
 
 - [Features](#Features)
 - [Stacks](#Stacks)
-- [Prerequisite](#Prerequisite)
+- [Development Environment Version](#Development-Environment-Version)
+- [Tools](#Tools)
 - [Run the Project](#Run-the-Project)
 - [Regenerate Native Folder](#Regenerate-Native-Folder)
 - [Test](#Test)
@@ -25,6 +26,11 @@ Weather forecasts, nowcasts and history in a fast and elegant way using [OpenWea
 - [Redux Tool Kit](https://redux-toolkit.js.org/)
 - [Axios](https://axios-http.com/)
 - `eslint` + `Standard` configured (using `npm`)
+
+## Tools
+
+- [Coolors](https://coolors.co/) to decide color pallete
+- [Google Font](https://fonts.google.com/specimen/Open+Sans)
 
 ## Development Environment Version
 
