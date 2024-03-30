@@ -1,0 +1,22 @@
+[
+  {
+    "name": "City of Medan",
+    "local_names": {
+      "zh": "棉兰",
+      "pt": "Medan",
+      "kn": "ಮೆದಾನ್",
+      "lt": "Medanas",
+      "en": "City of Medan",
+      "hi": "मॆदान्",
+      "id": "Kota Medan",
+      "uk": "Медан",
+      "oc": "Medan",
+      "ru": "Медан",
+      "ja": "メダン"
+    },
+    "lat": 3.5896654,
+    "lon": 98.6738261,
+    "country": "ID",
+    "state": "North Sumatra"
+  }
+]

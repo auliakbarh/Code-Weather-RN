@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 98.6738,
+    "lat": 3.5897
+  },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 298.73,
+    "feels_like": 299.64,
+    "temp_min": 298.73,
+    "temp_max": 299.18,
+    "pressure": 1013,
+    "humidity": 88
+  },
+  "visibility": 8000,
+  "wind": {
+    "speed": 1.54,
+    "deg": 230
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1711811560,
+  "sys": {
+    "type": 2,
+    "id": 2000331,
+    "country": "ID",
+    "sunrise": 1711754719,
+    "sunset": 1711798434
+  },
+  "timezone": 25200,
+  "id": 1214520,
+  "name": "Medan",
+  "cod": 200
+}
