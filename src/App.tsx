@@ -51,7 +51,7 @@ export default function App() {
             <Provider store={store}>
                 <RootSiblingParent>
                     <SafeArea onLayout={onLayoutRootView} style={tw`px-4 center`}>
-                        <Text style={tw`body-sm-italic text-black dark:text-green`}>Open up App.tsx to start working on
+                        <Text style={tw`body-sm-italic txt-orangeBright`}>Open up App.tsx to start working on
                             your app!</Text>
                         <StatusBar style="auto"/>
                     </SafeArea>

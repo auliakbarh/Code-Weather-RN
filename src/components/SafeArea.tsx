@@ -8,7 +8,7 @@ interface ISafeAreaProps extends React.PropsWithChildren, ViewProps {}
 export const SafeArea: React.FC<ISafeAreaProps> = ({ children, ...props }) => {
     const insets = useSafeAreaInsets()
     return (
-        <View {...props} style={[tw`bg-white dark:bg-black fill pt-[${insets.top}px] pb-[${insets.bottom}px] pl-[${insets.left}px] pr-[${insets.right}px]`, props.style]}>
+        <View {...props} style={[tw`bgr-neutral fill pt-[${insets.top}px] pb-[${insets.bottom}px] pl-[${insets.left}px] pr-[${insets.right}px]`, props.style]}>
             {children}
         </View>
     )
