@@ -2,10 +2,11 @@
   "expo": {
     "name": "Code-Weather-RN",
     "slug": "Code-Weather-RN",
+    "entryPoint": "./src/App.tsx",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -25,6 +26,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./src/assets/fonts/open-sans/static/*"]
+        }
+      ]
+    ]
   }
 }
