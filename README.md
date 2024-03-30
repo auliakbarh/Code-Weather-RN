@@ -8,6 +8,7 @@ Weather forecasts, nowcasts and history in a fast and elegant way using [OpenWea
 
 - [Features](#Features)
 - [Stacks](#Stacks)
+- [Prerequisite](#Prerequisite)
 - [Run the Project](#Run-the-Project)
 - [Regenerate Native Folder](#Regenerate-Native-Folder)
 - [Test](#Test)
@@ -24,6 +25,22 @@ Weather forecasts, nowcasts and history in a fast and elegant way using [OpenWea
 - [Redux Tool Kit](https://redux-toolkit.js.org/)
 - [Axios](https://axios-http.com/)
 - `eslint` + `Standard` configured (using `npm`)
+
+## Development Environment Version
+
+- node: v16.20.2
+- pod: v1.15.2
+- bun: v1.0.35
+- gem: v3.1.6
+- expo: v~50.0.14 
+- react: v18.2.0
+- react-native: v0.73.6
+- java:
+```text
+java version "17.0.9" 2023-10-17 LTS
+Java(TM) SE Runtime Environment (build 17.0.9+11-LTS-201)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.9+11-LTS-201, mixed mode, sharing)
+```
 
 ## Run the Project
 
