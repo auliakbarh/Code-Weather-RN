@@ -33,7 +33,7 @@ export const HeaderHome: React.FC = () => {
                 <ShimmerPlaceholder visible={!isLoading} style={tw`min-w-50 ml-2`}>
                     <View style={tw`row items-center`}>
                         <Text
-                            style={tw`body-lg ${textStlye} mr-2`}>{data && data.length > 0 ? data[0]['local_names'][lang] : ''}</Text>
+                            style={tw`body-lg ${textStlye} mr-2`}>{data && data.length > 0 ? data[0]?.['local_names']?.[lang] ?? data[0].name : ''}</Text>
                         <Feather
                             name="map-pin" size={14} color={iconColor}/>
                     </View>
