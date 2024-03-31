@@ -33,6 +33,12 @@
         {
           "fonts": ["./src/assets/fonts/open-sans/static/*"]
         }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location for best experiences to get weather information."
+        }
       ]
     ]
   }

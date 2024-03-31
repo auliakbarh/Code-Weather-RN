@@ -21,7 +21,9 @@ interface ILocalState {
 }
 
 // Keep the splash screen visible while we fetch resources
-SplashScreen.preventAutoHideAsync();
+void (async () => {
+    await SplashScreen.preventAutoHideAsync()
+})();
 export default function App() {
     useDeviceContext(tw, {
         observeDeviceColorSchemeChanges: false,

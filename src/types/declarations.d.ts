@@ -15,3 +15,7 @@ declare type TAppColors =
     | "white"
     | "smoke"
     | "greenBright"
+
+declare type TColorScheme = 'device' | 'light' | 'dark'
+
+declare type TAppLang = 'id' | 'en'

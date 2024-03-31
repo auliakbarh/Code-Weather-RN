@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { geolocationService, currentWeatherService, airPollutionService, forecastService } from '@/service'
+import { geolocationService, currentWeatherService, airPollutionService, forecastService, settingSlice } from '@/service'
 
 export const store = configureStore({
     reducer: {
@@ -7,6 +7,7 @@ export const store = configureStore({
         [currentWeatherService.reducerPath]: currentWeatherService.reducer,
         [airPollutionService.reducerPath]: airPollutionService.reducer,
         [forecastService.reducerPath]: forecastService.reducer,
+        setting: settingSlice.reducer,
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware()
         .concat(geolocationService.middleware)
