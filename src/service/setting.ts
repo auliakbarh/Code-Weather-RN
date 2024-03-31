@@ -3,6 +3,7 @@ import {createSlice} from '@reduxjs/toolkit'
 import {LocationObject} from 'expo-location'
 import dayjs from 'dayjs'
 import {apiConstants} from '@/api/mockup/constants'
+import {getLocales} from "expo-localization";
 export interface SettingState {
     location: LocationObject | null
     colorScheme: TColorScheme
@@ -13,7 +14,7 @@ export interface SettingState {
 const initialState: SettingState = {
     location: null,
     colorScheme: 'dark',
-    lang: 'id',
+    lang: getLocales()?.[0]?.languageCode as TAppLang ?? 'id',
     favPlace: [],
 }
 
