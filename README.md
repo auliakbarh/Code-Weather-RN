@@ -12,7 +12,8 @@ Weather forecasts, nowcasts and history in a fast and elegant way using [OpenWea
 - [Tools](#Tools)
 - [Run the Project](#Run-the-Project)
 - [Regenerate Native Folder](#Regenerate-Native-Folder)
-- [Test](#Test)
+- [Test](#Test) :construction:
+- [Preview](#Preview)
 
 ## Features
 
@@ -77,3 +78,6 @@ bunx expo prebuild --clean
 jest
 ```
 
+## Preview
+
+![app-preview.gif](assets%2Fapp-preview.gif)
