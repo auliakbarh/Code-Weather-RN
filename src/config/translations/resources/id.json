@@ -11,10 +11,21 @@
     "pressure": "Tekenan",
     "visibility": "Jarak Pandang",
     "dew-point": "Titik Embun",
-    "search": "Cari"
+    "search": "Cari",
+    "created-by-author": "dibuat oleh: Aulia Akbar Harahap (@auliakbarh)",
+    "about-app": "Semua data untuk OpenWeather App disediakan oleh One Call API™. OpenWeather mengumpulkan dan memproses data meteorologi dari puluhan ribu stasiun cuaca, radar dan satelit di darat untuk memberi Anda data cuaca yang akurat dan dapat ditindaklanjuti untuk lokasi mana pun di seluruh dunia"
   },
   "setting": {
     "language": "Bahasa",
-    "theme": "Tema"
+    "theme": "Tema",
+    "light": "Cerah",
+    "dark": "Gelap",
+    "en": "English",
+    "id": "Indonesia"
+  },
+  "screen-name": {
+    "HOME_PAGE": "Beranda",
+    "SEARCH_PAGE": "Pencarian",
+    "SETTING_PAGE":  "Pengaturan"
   }
 }

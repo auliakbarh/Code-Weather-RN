@@ -11,10 +11,21 @@
     "pressure": "Pressure",
     "visibility": "Visibility",
     "dew-point": "Dew Point",
-    "search": "Search"
+    "search": "Search",
+    "created-by-author": "created by: Aulia Akbar Harahap (@auliakbarh)",
+    "about-app": "All the data for OpenWeather App is provided by One Call API™. OpenWeather aggregates and processes meteorogical data from tens of thousands of weather stations, on-ground radars and satellites to bring you accurate and actionable weather data for any location worldwide"
   },
   "setting": {
     "language": "Language",
-    "theme": "Theme"
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "en": "English",
+    "id": "Indonesia"
+  },
+  "screen-name": {
+    "HOME_PAGE": "Home",
+    "SEARCH_PAGE": "Search",
+    "SETTING_PAGE":  "Setting"
   }
 }

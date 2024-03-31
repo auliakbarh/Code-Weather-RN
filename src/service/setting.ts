@@ -11,7 +11,7 @@ export interface SettingState {
 
 const initialState: SettingState = {
     location: null,
-    colorScheme: 'device',
+    colorScheme: 'dark',
     lang: 'id',
 }
 

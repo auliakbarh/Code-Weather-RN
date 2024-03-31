@@ -2,7 +2,8 @@ import React, {useCallback} from 'react'
 import {View, ViewProps} from 'react-native'
 import {useSafeAreaInsets} from "react-native-safe-area-context";
 
-import tw from "@/config/twrnc";
+import {tw} from "@/config/twrnc";
+import {useStyle} from "@/hooks";
 
 interface ISafeAreaProps extends React.PropsWithChildren, ViewProps {
     set?: Array<'all' | 't' | 'b' | 'l' | 'r'>
@@ -38,7 +39,8 @@ export const SafeArea: React.FC<ISafeAreaProps> = ({children, set, ...props}) =>
     }, [insets])
     return (
         <View {...props} style={[tw.style(
-            'bgr-neutral fill',
+            'fill',
+            useStyle('bg','bg'),
             setPadding(set).join(' '),
         ), props.style]}>
             {children}

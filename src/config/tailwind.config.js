@@ -131,21 +131,7 @@ const colors = {
     white: '#FFFFFF',
     smoke: '#F2F2F2',
     greenBright: '#8BD0C6',
-}
-
-const colorTheme = {
-    'txt-black': 'text-black dark:text-neutral',
-    'bgr-black': 'bg-black dark:bg-neutral',
-    'txt-neutral': 'text-neutral dark:text-black',
-    'bgr-neutral': 'bg-neutral dark:bg-black',
-    'txt-white': 'text-white dark:text-black',
-    'bgr-white': 'bg-white dark:bg-black',
-    'txt-orangeBright': 'text-orangeBright dark:text-orange',
-    'bgr-orangeBright': 'bg-orangeBright dark:bg-orange',
-    'txt-greenBright': 'text-greenBright dark:text-green',
-    'bgr-greenBright': 'bg-greenBright dark:bg-green',
-    'txt-smoke': 'text-smoke dark:text-gray',
-    'bgr-smoke': 'bg-smoke dark:bg-gray',
+    error: '#b61212',
 }
 
 module.exports = {
@@ -156,7 +142,6 @@ module.exports = {
                 ...shadows,
                 ...fontStyle,
                 ...borderRadius,
-                ...colorTheme,
             })
         }),
     ],

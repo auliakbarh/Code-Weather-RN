@@ -1,5 +1,3 @@
-import { create } from 'twrnc'
+import {create} from 'twrnc'
 
-const tw = create(require('@/config/tailwind.config.js'))
-
-export default tw;
+export const tw = create(require('@/config/tailwind.config.js'))

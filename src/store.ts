@@ -7,7 +7,7 @@ export const store = configureStore({
         [currentWeatherService.reducerPath]: currentWeatherService.reducer,
         [airPollutionService.reducerPath]: airPollutionService.reducer,
         [forecastService.reducerPath]: forecastService.reducer,
-        setting: settingSlice.reducer,
+        [settingSlice.reducerPath]: settingSlice.reducer,
     },
     middleware: getDefaultMiddleware => getDefaultMiddleware()
         .concat(geolocationService.middleware)

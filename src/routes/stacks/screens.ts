@@ -1,23 +1,20 @@
-import * as component from '@/features/views'
-
-export enum SCREEN_NAME {
-    'HOME_PAGE' = 'HOME_PAGE',
-    'SEARCH_PAGE' = 'SEARCH_PAGE',
-    'SETTING_PAGE' = 'SETTING_PAGE',
-}
+import {HomeUI} from '@/features/home/views/HomeUI'
+import {SearchUI} from '@/features/search/views/SearchUI'
+import {SettingsUI} from '@/features/settings/views/SettingsUI'
+import {SCREEN_NAME} from "@/routes/stacks/types/screenName";
 
 export const SCREENS = {
     HomePage: {
         name: SCREEN_NAME.HOME_PAGE,
-        component: component.HomeUI,
+        component: HomeUI,
     },
     SearchPage: {
         name: SCREEN_NAME.SEARCH_PAGE,
-        component: component.SearchUI,
+        component: SearchUI,
     },
     SettingsPage: {
         name: SCREEN_NAME.SETTING_PAGE,
-        component: component.SettingsUI,
+        component: SettingsUI,
     },
 }
 

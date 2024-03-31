@@ -75,16 +75,28 @@ export class Navigation {
     getCurrentRoute() {
         if (this.navigationRef.current) {
             let navIterator = this.navigationRef.current?.state?.nav;
-            while (navIterator.index != null) {
+            while (navIterator?.index) {
                 navIterator = navIterator.routes[navIterator.index];
             }
-            return navIterator.routeName;
+            return navIterator;
         }
         return undefined;
     }
 
     getCurrentRouteName() {
-        return this.getCurrentRoute() && this.getCurrentRoute().routeName;
+        const routes = this.navigationRef.current?.getRootState().routes
+        if (routes === undefined) {
+            return undefined
+        }
+        return routes[routes?.length - 1].name
+    }
+
+    getPrevRouteName() {
+        const routes = this.navigationRef.current?.getRootState().routes
+        if (routes === undefined) {
+            return undefined
+        }
+        return routes[routes?.length - 2].name
     }
 }
 

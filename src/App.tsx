@@ -6,13 +6,12 @@ import {Provider} from 'react-redux'
 import * as SplashScreen from 'expo-splash-screen';
 import {SafeAreaProvider} from 'react-native-safe-area-context'
 import {RootSiblingParent} from 'react-native-root-siblings';
-import {useDeviceContext} from 'twrnc';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 
 import {store} from '@/store'
 import {loadFonts} from "@/utils/functions";
-import tw from "@/config/twrnc";
+import {tw} from "@/config/twrnc";
 import {navigation} from "@/routes/Navigation";
 import {AppStack} from "@/routes";
 import "@/config/translations";
@@ -26,10 +25,6 @@ void (async () => {
     await SplashScreen.preventAutoHideAsync()
 })();
 export default function App() {
-    useDeviceContext(tw, {
-        observeDeviceColorSchemeChanges: false,
-        initialColorScheme: 'dark',
-    })
     const [{isFinishLoadFont}, setState] = useState<ILocalState>({isFinishLoadFont: false})
     useEffect(() => {
         void (async () => {
@@ -55,14 +50,14 @@ export default function App() {
     return (
         <SafeAreaProvider>
             <Provider store={store}>
-                <RootSiblingParent>
-                    <NavigationContainer ref={navigation.navigationRef}>
-                        <View onLayout={onLayoutRootView} style={tw`fill`}>
-                            <AppStack />
-                            <StatusBar style="auto"/>
-                        </View>
-                    </NavigationContainer>
-                </RootSiblingParent>
+                    <RootSiblingParent>
+                        <NavigationContainer ref={navigation.navigationRef}>
+                            <View onLayout={onLayoutRootView} style={tw`fill`}>
+                                <AppStack/>
+                                <StatusBar style="auto"/>
+                            </View>
+                        </NavigationContainer>
+                    </RootSiblingParent>
             </Provider>
         </SafeAreaProvider>
     );
