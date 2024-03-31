@@ -115,23 +115,23 @@ export const HomeUI: React.FC = () => {
                                     <View style={tw`row items-center justify-between`}>
                                         <View style={tw`row items-center`}>
                                             <Text
-                                                style={tw.style(textStyle, 'footnote-bold')}>{`${tCommon('wind')}: ${dataToRender.wind.speed}m/s SSE`}</Text>
+                                                style={tw.style(textStyle, 'footnote-bold text-[8px]')}>{`${tCommon('wind')}: ${dataToRender.wind.speed}m/s SSE`}</Text>
                                             <MaterialIcons name="navigation" size={14} color={fillColor} style={{
                                                 transform: [{rotate: dataToRender.wind.deg + 'deg'}],
                                             }}/>
                                         </View>
                                         <Text
-                                            style={tw.style(textStyle, 'footnote-bold')}>{`${tCommon('humidity')}: ${dataToRender.main.humidity}%`}</Text>
+                                            style={tw.style(textStyle, 'footnote-bold text-[8px]')}>{`${tCommon('humidity')}: ${dataToRender.main.humidity}%`}</Text>
                                         <Text
-                                            style={tw.style(textStyle, 'footnote-bold')}>{`${tCommon('uv-index')}: 1.1`}</Text>
+                                            style={tw.style(textStyle, 'footnote-bold text-[8px]')}>{`${tCommon('uv-index')}: 1.1`}</Text>
                                         <Text
-                                            style={tw.style(textStyle, 'footnote-bold')}>{`${tCommon('pressure')}: ${dataToRender.main.pressure}hPa`}</Text>
+                                            style={tw.style(textStyle, 'footnote-bold text-[8px]')}>{`${tCommon('pressure')}: ${dataToRender.main.pressure}hPa`}</Text>
                                     </View>
                                     <View style={tw`row items-center justify-between mt-2`}>
                                         <Text
-                                            style={tw.style(textStyle, 'footnote-bold')}>{`${tCommon('visibility')}: ${numberFormat((dataToRender.visibility / 1000), 1, '.', '')}km`}</Text>
+                                            style={tw.style(textStyle, 'footnote-bold text-[8px]')}>{`${tCommon('visibility')}: ${numberFormat((dataToRender.visibility / 1000), 1, '.', '')}km`}</Text>
                                         <Text
-                                            style={tw.style(textStyle, 'footnote-bold')}>{`${tCommon('dew-point')}: 9°C`}</Text>
+                                            style={tw.style(textStyle, 'footnote-bold text-[8px]')}>{`${tCommon('dew-point')}: 9°C`}</Text>
                                     </View>
                                 </View>
                             </View>
@@ -143,6 +143,7 @@ export const HomeUI: React.FC = () => {
                                         <ScrollView horizontal bounces={false} contentContainerStyle={tw`w-full`}>
                                             <FlatList
                                                 data={forecastData?.list ?? []}
+                                                extraData={forecastData}
                                                 renderItem={renderList}
                                                 keyExtractor={item => `${item.dt}`}
                                                 ItemSeparatorComponent={() => <View style={tw.style(`h-[1px]`, lineColor)}/>
