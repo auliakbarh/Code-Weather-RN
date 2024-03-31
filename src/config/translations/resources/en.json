@@ -27,5 +27,8 @@
     "HOME_PAGE": "Home",
     "SEARCH_PAGE": "Search",
     "SETTING_PAGE":  "Setting"
+  },
+  "home": {
+    "feels-like": "Feels like {{temp}}"
   }
 }

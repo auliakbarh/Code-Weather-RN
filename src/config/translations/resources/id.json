@@ -27,5 +27,8 @@
     "HOME_PAGE": "Beranda",
     "SEARCH_PAGE": "Pencarian",
     "SETTING_PAGE":  "Pengaturan"
+  },
+  "home": {
+    "feels-like": "Feels like {{temp}}"
   }
 }

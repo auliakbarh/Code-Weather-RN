@@ -71,7 +71,7 @@ bunx expo prebuild --clean
 
 ## Test
 
-To run test and coverage, use `jest`
+:construction: To run test and coverage, use `jest`
 
 ```shell
 jest

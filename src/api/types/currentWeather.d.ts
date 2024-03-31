@@ -43,7 +43,7 @@ declare type TDataGetCurrentWeather = {
 declare interface IGetByLatLong {
     lat: number
     lon: number
-    units: 'metric' | 'standard' | 'imperial'
+    units?: 'metric' | 'standard' | 'imperial'
 }
 
 /**
