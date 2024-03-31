@@ -3,12 +3,14 @@ import {Text} from 'react-native'
 import Toast from "react-native-root-toast";
 import * as Location from "expo-location";
 import {useDispatch} from "react-redux";
+import {useTranslation} from "react-i18next";
 
 import tw from "@/config/twrnc";
 import {SafeArea} from "@/components";
 import {setLocation} from "@/service";
 export const HomeUI: React.FC = () => {
     const dispatch = useDispatch()
+    const {t} = useTranslation("screen-tag")
     useEffect(() => {
         void (async () => {
             let { status } = await Location.requestForegroundPermissionsAsync()
@@ -23,7 +25,7 @@ export const HomeUI: React.FC = () => {
     }, []);
     return (
         <SafeArea>
-            <Text style={tw`body-sm-italic txt-orangeBright`}>Home</Text>
+            <Text style={tw`body-sm-italic txt-orangeBright`}>{t("home")}</Text>
         </SafeArea>
     )
 }

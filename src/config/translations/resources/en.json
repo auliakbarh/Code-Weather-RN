@@ -1,0 +1,20 @@
+{
+  "screen-tag": {
+    "home": "Home",
+    "search": "Search",
+    "setting": "Setting"
+  },
+  "common": {
+    "wind": "Wind",
+    "humidity": "Humidity",
+    "uv-index": "UC Index",
+    "pressure": "Pressure",
+    "visibility": "Visibility",
+    "dew-point": "Dew Point",
+    "search": "Search"
+  },
+  "setting": {
+    "language": "Language",
+    "theme": "Theme"
+  }
+}

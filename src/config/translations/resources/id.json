@@ -1,0 +1,20 @@
+{
+  "screen-tag": {
+    "home": "Beranda",
+    "search": "Cari",
+    "setting": "Pengaturan"
+  },
+  "common": {
+    "wind": "Kec. Angin",
+    "humidity": "Kelembaban",
+    "uv-index": "Index UV",
+    "pressure": "Tekenan",
+    "visibility": "Jarak Pandang",
+    "dew-point": "Titik Embun",
+    "search": "Cari"
+  },
+  "setting": {
+    "language": "Bahasa",
+    "theme": "Tema"
+  }
+}

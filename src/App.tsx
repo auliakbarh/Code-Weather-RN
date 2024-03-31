@@ -15,6 +15,7 @@ import {loadFonts} from "@/utils/functions";
 import tw from "@/config/twrnc";
 import {navigation} from "@/routes/Navigation";
 import {AppStack} from "@/routes";
+import "@/config/translations";
 
 interface ILocalState {
     isFinishLoadFont: boolean
