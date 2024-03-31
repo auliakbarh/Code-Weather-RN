@@ -37,7 +37,7 @@ export const AppStack: React.FC = () => {
     }, []);
 
     return (
-        <Stack.Navigator initialRouteName={initialRouteName}>
+        <Stack.Navigator initialRouteName={initialRouteName} screenOptions={{ gestureEnabled: true }}>
             {STACK_SCREENS.map(renderStackScreens)}
         </Stack.Navigator>
     );

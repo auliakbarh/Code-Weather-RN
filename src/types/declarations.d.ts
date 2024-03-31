@@ -9,6 +9,7 @@ declare type TAppColors =
     | "orange"
     | "black"
     | "gray"
+    | "softGray"
     | "neutral"
     | "green"
     | "orangeBright"

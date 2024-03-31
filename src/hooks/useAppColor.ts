@@ -19,11 +19,11 @@ export const useAppColor = (dark: TAppColors, light: TAppColors): string => {
     })()) as string, [theme, light, dark])
 }
 
-type TDefinedColor = 'text' | 'bg' | 'fill' | 'orange' | 'green' | 'neutral' | 'white' | 'black' | 'smoke' | 'line'
+type TDefinedColor = 'text' | 'bg' | 'fill' | 'orange' | 'green' | 'neutral' | 'white' | 'black' | 'smoke' | 'line' | 'placeholder' | 'input'
 
 const COLOR_PURPOSES: Record<TDefinedColor, { dark: TAppColors, light: TAppColors }> = {
     text: { dark: 'neutral', light: 'black' },
-    bg: { dark: 'black', light: 'neutral' },
+    bg: { dark: 'black', light: 'white' },
     fill: { dark: 'neutral', light: 'black' },
     orange: { dark: 'orange', light: 'orangeBright' },
     green: { dark: 'green', light: 'greenBright' },
@@ -32,6 +32,8 @@ const COLOR_PURPOSES: Record<TDefinedColor, { dark: TAppColors, light: TAppColor
     black: { dark: 'neutral', light: 'black' },
     smoke: { dark: 'gray', light: 'smoke' },
     line: { dark: 'gray', light: 'smoke' },
+    placeholder: { dark: 'smoke', light: 'gray' },
+    input: { dark: 'gray', light: 'softGray' },
 }
 export const useColor = (purpose: TDefinedColor): string => {
     return useAppColor(COLOR_PURPOSES[purpose].dark, COLOR_PURPOSES[purpose].light)

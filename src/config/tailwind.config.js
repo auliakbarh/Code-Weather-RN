@@ -130,6 +130,7 @@ const colors = {
     orangeBright: '#EA6E4A',
     white: '#FFFFFF',
     smoke: '#F2F2F2',
+    softGray: '#d9d9d9',
     greenBright: '#8BD0C6',
     error: '#b61212',
 }

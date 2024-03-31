@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {Text, TouchableOpacity, View} from "react-native";
 import {Feather, Ionicons} from "@expo/vector-icons";
 import {useAppColor, useStyle} from "@/hooks";
@@ -28,9 +28,9 @@ export const HeaderHome: React.FC = () => {
 
     return (
         <View style={tw`row justify-between py-2`}>
-            <View style={tw`row items-center flex-1`}>
+            <TouchableOpacity onPress={() => navigation.navigate(SCREENS.SearchPage.name)} style={tw`row items-center flex-1`}>
                 <Ionicons name="search" size={24} color={iconColor}/>
-                <ShimmerPlaceholder visible={!isLoading} style={tw`w-50 ml-2`}>
+                <ShimmerPlaceholder visible={!isLoading} style={tw`min-w-50 ml-2`}>
                     <View style={tw`row items-center`}>
                         <Text
                             style={tw`body-lg ${textStlye} mr-2`}>{data && data.length > 0 ? data[0]['local_names'][lang] : ''}</Text>
@@ -38,7 +38,7 @@ export const HeaderHome: React.FC = () => {
                             name="map-pin" size={14} color={iconColor}/>
                     </View>
                 </ShimmerPlaceholder>
-            </View>
+            </TouchableOpacity>
             <TouchableOpacity onPress={() => navigation.navigate(SCREENS.SettingsPage.name)}>
                 <Feather
                     name="menu" size={24} color={iconColor}/>

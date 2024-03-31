@@ -7,12 +7,14 @@ export interface SettingState {
     location: LocationObject | null
     colorScheme: TColorScheme
     lang: TAppLang
+    favPlace: TDataLocationByQueryName
 }
 
 const initialState: SettingState = {
     location: null,
     colorScheme: 'dark',
     lang: 'id',
+    favPlace: [],
 }
 
 export const DEFAULT_LOCATION: LocationObject = {
@@ -48,6 +50,10 @@ export const settingSlice = createSlice({
         setLang: (state, action: PayloadAction<TAppLang>) => {
             state.lang = action.payload
         },
+        setFavPlace: (state, action: PayloadAction<TDataLocationByQueryName[number]>) => {
+            const find = state.favPlace.find(i => i.lat === action.payload.lat && i.lon === action.payload.lon)
+            state.favPlace = find ? state.favPlace.filter(i => i.lat !== find.lat && i.lon !== find.lon) : [...state.favPlace, action.payload]
+        },
         reset: (state) => {
             state = {
                 ...initialState, location: {
@@ -59,4 +65,4 @@ export const settingSlice = createSlice({
     },
 })
 
-export const {setLocation, reset, setLang, setColorScheme} = settingSlice.actions
+export const {setLocation, reset, setLang, setColorScheme, setFavPlace} = settingSlice.actions

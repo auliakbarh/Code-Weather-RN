@@ -10,19 +10,7 @@ declare interface IParamsGetLocationByQueryName {
 
 declare type TDataLocationByQueryName = Array<{
     name: string
-    local_names: {
-        zh: string
-        pt: string
-        kn: string
-        lt: string
-        en: string
-        hi: string
-        id: string
-        uk: string
-        oc: string
-        ru: string
-        ja: string
-    }
+    local_names: Record<string, string>
     lat: number
     lon: number
     country: string
@@ -52,19 +40,7 @@ declare interface IParamsReverseGeolocation {
 
 declare type TDataReverseGeolocation = Array<{
     name: string
-    local_names: {
-        kn: string
-        ru: string
-        id: string
-        uk: string
-        pt: string
-        ja: string
-        hi: string
-        lt: string
-        zh: string
-        en: string
-        oc: string
-    }
+    local_names: Record<string, string>
     lat: number
     lon: number
     country: string
